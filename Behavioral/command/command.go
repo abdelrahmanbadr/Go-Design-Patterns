@@ -1,4 +1,6 @@
-package main
+package command
+
+import "fmt"
 
 //Command
 type Command interface {
@@ -36,9 +38,11 @@ type Light struct {
 
 func (light *Light) switchOn() {
 	light.lightOn = true
+	fmt.Println("light is on")
 }
 func (light *Light) switchOff() {
 	light.lightOn = false
+	fmt.Println("light is off")
 }
 
 //Invoker
@@ -54,7 +58,7 @@ func (this *RemoteControl) pressButton() {
 }
 
 //Client
-func main() {
+func Client() {
 	control := new(RemoteControl)
 	light := new(Light)
 	lightsOn := NewLightOnCommand(light)
