@@ -20,5 +20,5 @@ This is a collection of known design patterns and some sample code how to implem
 
 ## Behavioral
 
-* [观察者模式（Observer）](https://github.com/senghoo/golang-design-pattern/tree/master/10_observer)
-* [命令模式（Command）](https://github.com/senghoo/golang-design-pattern/tree/master/11_command)
+* [Observer](https://github.com/senghoo/golang-design-pattern/tree/master/10_observer)
+* [Command](https://github.com/senghoo/golang-design-pattern/tree/master/11_command)
