@@ -1,0 +1,30 @@
+`Command`__
+===========
+
+Purpose
+-------
+
+To decouple invoker from object that handle invokation (Encapsulate method invocation).
+
+We have an Invoker and a Receiver. This pattern uses a "Command" to
+delegate the method call against the Receiver and presents the same
+method "execute". Therefore, the Invoker just knows to call "execute" to
+process the Command of the client. The Receiver is decoupled from the
+Invoker.
+
+The second aspect of this pattern is the undo(), which undoes the method
+execute(). Command can also be aggregated to combine more complex
+commands with minimum copy-paste and relying on composition over
+inheritance.
+
+UML Diagram
+-----------
+
+.. image:: uml/uml.png
+   :alt: Alt Command UML Diagram
+   :align: center
+
+Test
+----
+
+command_test.go
