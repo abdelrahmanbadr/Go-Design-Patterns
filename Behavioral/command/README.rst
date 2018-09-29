@@ -20,7 +20,7 @@ inheritance.
 UML Diagram
 -----------
 
-.. image:: uml/uml.png
+.. image:: uml/command.png
    :alt: Alt Command UML Diagram
    :align: center
 
