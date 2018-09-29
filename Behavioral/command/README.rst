@@ -1,4 +1,4 @@
-`Command`__
+Command
 ===========
 
 Purpose
