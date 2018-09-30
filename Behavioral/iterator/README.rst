@@ -24,7 +24,7 @@ Examples
 UML Diagram
 -----------
 
-.. image:: uml/Iterator.png
+.. image:: uml/iterator.png
    :alt: Alt Iterator UML Diagram
    :align: center
 
