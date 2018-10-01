@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f2c4552-eb9e-4da2-bc70-47e01db1b089" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Creational/builder/builder.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Creational/builder/builder_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Creational/prototype/README.rst" beforeDir="false" afterPath="$PROJECT_DIR$/Creational/prototype/README.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Creational/prototype/prototype_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/Creational/prototype/prototype_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Creational/builder/README.rst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,25 +22,25 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="go" value="12" />
-          <entry key="rst" value="3" />
+          <entry key="rst" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Go" value="12" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="go" value="343" />
-          <entry key="rst" value="77" />
+          <entry key="rst" value="92" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Go" value="343" />
-          <entry key="PLAIN_TEXT" value="77" />
+          <entry key="PLAIN_TEXT" value="92" />
         </counts>
       </usages-collector>
     </session>
@@ -69,11 +65,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Creational/singletone/singletone.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
               <caret line="11" column="24" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Creational/builder/README.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -138,6 +143,7 @@
         <option value="$PROJECT_DIR$/Creational/builder/builder_test.go" />
         <option value="$PROJECT_DIR$/Creational/prototype/prototype_test.go" />
         <option value="$PROJECT_DIR$/Creational/singletone/singletone.go" />
+        <option value="$PROJECT_DIR$/Creational/builder/README.rst" />
       </list>
     </option>
   </component>
@@ -147,7 +153,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="839" />
@@ -172,19 +178,13 @@
             <path>
               <item name="Go-Design-Patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="Go-Design-Patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="Behavioral" type="462c0819:PsiDirectoryNode" />
-              <item name="observer" type="462c0819:PsiDirectoryNode" />
+              <item name="Creational" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Go-Design-Patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="Go-Design-Patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="Structural" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Go-Design-Patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Go-Design-Patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="Structural" type="462c0819:PsiDirectoryNode" />
-              <item name="Facade" type="462c0819:PsiDirectoryNode" />
+              <item name="Creational" type="462c0819:PsiDirectoryNode" />
+              <item name="builder" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -217,10 +217,10 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="839" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="839" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -232,7 +232,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3694779" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3694779" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -360,6 +360,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="24" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Creational/builder/README.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
