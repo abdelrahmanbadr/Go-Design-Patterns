@@ -1,4 +1,4 @@
-`Prototype`__
+Prototype
 =============
 
 Purpose

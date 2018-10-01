@@ -1,13 +1,16 @@
 package prototype
 
-import "fmt"
+import (
+	"fmt"
+)
 
-func ExamplePrototype(){
+func ExamplePrototype() {
 	prototype := &ConcretePrototype{"prototype1"}
 	fmt.Println(prototype.name)
 	fmt.Println(prototype.Clone().name)
 
-	//Output
-	//prototype1
-	//prototype1
+	// Output:
+	// prototype1
+	// prototype1
+
 }
