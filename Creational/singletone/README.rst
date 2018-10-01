@@ -1,4 +1,4 @@
-`Singleton`__
+Singleton
 =============
 
 **THIS IS CONSIDERED TO BE AN ANTI-PATTERN! FOR BETTER TESTABILITY AND
