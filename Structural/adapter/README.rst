@@ -1,7 +1,6 @@
 Adapter / Wrapper
 =====================
-Introduction
--------
+
 The Adapter Pattern is responsible for adaptation of two incompatible interfaces. It is a structural pattern that is responsible to join functionalities of independent or incompatible interfaces without modifing their implementation.
 
 Interfaces may be incompatible but the inner functionality should suit the need. It allows otherwise incompatible objects to work together by converting the interface of each struct into an interface expected by the clients.
