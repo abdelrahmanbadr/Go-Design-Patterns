@@ -17,6 +17,15 @@ Terminology
 - ConcretePrototype implements an operation for cloning itself
 - Client creates a new object by asking a prototype to clone itself
 
+Verdict
+-------
+One of the disadvantages of this pattern is that the process of copying an object can be complicated.
+In addition, structs that have circular references to other classes are difficult to clone.
+Its overuse could affect performance, as the prototype object itself would need to be instantiated if you use a registry of prototypes.
+
+In the context of Golang, I don’t see any particular reason to adopt it.
+Golang already provides builtin mechanism for cloning objects.
+
 Examples
 --------
 
