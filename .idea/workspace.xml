@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c34c2d3-d542-446d-8466-36c865e2f186" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Structural/proxy/example1/proxy.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Structural/proxy/example1/proxy_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Structural/proxy/example2/proxy.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Structural/proxy/example2/proxy_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structural/decorator/example1/decorator.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structural/decorator/example2/decorator.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,25 +23,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="11" />
+          <entry key="go" value="13" />
           <entry key="rst" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="11" />
+          <entry key="Go" value="13" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="823" />
+          <entry key="go" value="867" />
           <entry key="rst" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="823" />
+          <entry key="Go" value="867" />
           <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
@@ -95,11 +93,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Structural/proxy/example2/proxy_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+            <state relative-caret-position="195">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Structural/decorator/example1/decorator.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#18#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Structural/decorator/example2/decorator.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+              <folding>
+                <element signature="e#18#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,6 +139,7 @@
     <findStrings>
       <find>ToyDuck</find>
       <find>mockedDatabase</find>
+      <find>1 repository.Fetch</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
@@ -138,6 +161,8 @@
         <option value="$PROJECT_DIR$/Structural/proxy/example2.go" />
         <option value="$PROJECT_DIR$/Structural/proxy/example2/proxy.go" />
         <option value="$PROJECT_DIR$/Structural/proxy/example2/proxy_test.go" />
+        <option value="$PROJECT_DIR$/Structural/decorator/example1/decorator.go" />
+        <option value="$PROJECT_DIR$/Structural/decorator/example2/decorator.go" />
       </list>
     </option>
   </component>
@@ -174,14 +199,7 @@
               <item name="Go-Design-Patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="Go-Design-Patterns" type="462c0819:PsiDirectoryNode" />
               <item name="Structural" type="462c0819:PsiDirectoryNode" />
-              <item name="proxy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Go-Design-Patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Go-Design-Patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="Structural" type="462c0819:PsiDirectoryNode" />
-              <item name="proxy" type="462c0819:PsiDirectoryNode" />
-              <item name="example2" type="462c0819:PsiDirectoryNode" />
+              <item name="decorator" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -230,7 +248,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.34986594" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.0844504" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -390,8 +408,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Structural/proxy/example2/proxy_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        <state relative-caret-position="195">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Structural/decorator/example1/decorator.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#18#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Structural/decorator/example2/decorator.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+          <folding>
+            <element signature="e#18#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
