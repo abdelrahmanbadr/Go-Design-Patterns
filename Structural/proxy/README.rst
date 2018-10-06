@@ -6,7 +6,8 @@ A real world example can be a cheque or credit card is a proxy for what is in ou
 
 Purpose
 -------
-- Proxy pattern is used when we need to create a wrapper to cover the main object’s complexity from the client.
+- Proxy pattern is used when we need to create an object wrapper to cover the main object’s complexity from the client.
+- Provide a new abstraction layer that is easy to work with, and can be changed easily 
 - Represent an object that is complex or time consuming to create with a simpler one.
 
 Examples
