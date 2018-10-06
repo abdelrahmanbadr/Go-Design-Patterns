@@ -14,8 +14,8 @@ Purpose
 Terminology
 -------
 - Target is the domain-specific interface that Client wants to use.
-- Adapter adapts the interface Adaptee to the Target interface. It implements the Target interface in terms of the Adaptee.
 - Adaptee defines an existing interface that needs adapting.
+- Adapter adapts the interface Adaptee to the Target interface. It implements the Target interface in terms of the Adaptee.
 - Client collaborates with objects conforming to the Target interface.
 
 Examples
