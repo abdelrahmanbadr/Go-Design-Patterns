@@ -11,6 +11,13 @@ Purpose
 - Wrap the interface of a object into another interface clients expect.
 - Allows classes to work together that normally could not because of incompatible interfaces by providing its interface to clients while using the original interface.
 
+Terminology
+-------
+- `Target` is the domain-specific interface that Client wants to use.
+- `Adapter` adapts the interface Adaptee to the Target interface. It implements the Target interface in terms of the Adaptee.
+- `Adaptee` defines an existing interface that needs adapting.
+- `Client` collaborates with objects conforming to the Target interface.
+
 Examples
 --------
 
