@@ -1,10 +1,13 @@
 Proxy
 =========
+A class represents functionality of another class
+
+A real world example can be a cheque or credit card is a proxy for what is in our bank account. It can be used in place of cash, and provides a means of accessing that cash when required. And that’s exactly what the Proxy pattern does – “Controls and manage access to the object they are protecting“.
 
 Purpose
 -------
-
-To interface to anything that is expensive or impossible to duplicate.
+- Proxy pattern is used when we need to create a wrapper to cover the main object’s complexity from the client.
+- Represent an object that is complex or time consuming to create with a simpler one.
 
 Examples
 --------
