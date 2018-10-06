@@ -25,6 +25,7 @@ UML Diagram
    :alt: Alt Adapter UML Diagram
    :align: center
 
-Tests/AdapterTest.php
+Test
+-----------
 
 adapter_test.go
