@@ -1,48 +1,48 @@
 package example1
 
 import (
-	"errors"
 	"fmt"
 )
 
-type IngredientAdder interface {
-	AddIngredient() (string, error)
+// Component
+type Beverage interface {
+	Description() string
 }
 
-type PizzaDecorator struct {
-	Ingredient IngredientAdder
+// ConcreteComponent
+type BasicBeverage struct{}
+
+func (c *BasicBeverage) Description() string {
+	return ""
 }
 
-func (p *PizzaDecorator) AddIngredient() (string, error) {
-	return "Pizza with the following ingredients:", nil
+// Concrete Decorator
+type Coca struct {
+	beverage Beverage
 }
 
-type Meat struct {
-	Ingredient IngredientAdder
-}
-
-func (m *Meat) AddIngredient() (string, error) {
-	if m.Ingredient == nil {
-		return "", errors.New("An IngredientAdder is needed on the Ingredient field of the Meat")
+func (c *Coca) Description() string {
+	if c.beverage == nil {
+		return "Coco"
+	} else {
+		return c.beverage.Description() + " Coco"
 	}
-	s, err := m.Ingredient.AddIngredient()
-	if err != nil {
-		return "", err
-	}
-	return fmt.Sprintf("%s %s,", s, "meat"), nil
 }
 
-type Onion struct {
-	Ingredient IngredientAdder
+// Concrete Decorator
+type Coffe struct {
+	beverage Beverage
 }
 
-func (o *Onion) AddIngredient() (string, error) {
-	if o.Ingredient == nil {
-		return "", errors.New("An IngredientAdder is needed on the Ingredient field of the Onion")
+func (c *Coffe) Description() string {
+	if c.beverage == nil {
+		return "Coffe"
+	} else {
+		return c.beverage.Description() + " Coffe"
 	}
-	s, err := o.Ingredient.AddIngredient()
-	if err != nil {
-		return "", err
-	}
-	return fmt.Sprintf("%s %s,", s, "onion"), nil
+}
+
+func main() {
+	component := &Coffe{&Coca{new(BasicBeverage)}}
+	fmt.Println(component.Description())
 }
