@@ -26,87 +26,87 @@ type VehicleBuilder interface {
 
 //A Builder of type motorbike
 type BikeBuilder struct {
-	v Vehicle
+	vehicle Vehicle
 }
 
 func (b *BikeBuilder) SetWheels() VehicleBuilder {
-	b.v.Wheels = 2
+	b.vehicle.Wheels = 2
 	return b
 }
 
 func (b *BikeBuilder) SetSeats() VehicleBuilder {
-	b.v.Seats = 2
+	b.vehicle.Seats = 2
 	return b
 }
 func (b *BikeBuilder) TopSpeed() VehicleBuilder {
-	b.v.TopSpeed = 180
+	b.vehicle.TopSpeed = 180
 	return b
 }
 
 func (b *BikeBuilder) SetStructure() VehicleBuilder {
-	b.v.Structure = "Motorbike"
+	b.vehicle.Structure = "Motorbike"
 	return b
 }
 
 func (b *BikeBuilder) Build() Vehicle {
-	return b.v
+	return b.vehicle
 }
 
 //A Builder of type Bus
 type BusBuilder struct {
-	v Vehicle
+	vehicle Vehicle
 }
 
 func (b *BusBuilder) SetWheels() VehicleBuilder {
-	b.v.Wheels = 8
+	b.vehicle.Wheels = 8
 	return b
 }
 func (c *BusBuilder) SetSeats() VehicleBuilder {
-	c.v.Seats = 52
+	c.vehicle.Seats = 52
 	return c
 }
 
 func (b *BusBuilder) TopSpeed() VehicleBuilder {
-	b.v.TopSpeed = 90
+	b.vehicle.TopSpeed = 90
 	return b
 }
 
 func (b *BusBuilder) SetStructure() VehicleBuilder {
-	b.v.Structure = "Bus"
+	b.vehicle.Structure = "Bus"
 	return b
 }
 
 func (b *BusBuilder) Build() Vehicle {
-	return b.v
+	return b.vehicle
 }
 
 //A Builder of type Car
 type CarBuilder struct {
-	v Vehicle
+	vehicle Vehicle
 }
 
 func (c *CarBuilder) SetWheels() VehicleBuilder {
-	c.v.Wheels = 4
+	c.vehicle.Wheels = 4
 	return c
 }
 
 func (c *CarBuilder) SetSeats() VehicleBuilder {
-	c.v.Seats = 5
+	c.vehicle.Seats = 5
 	return c
 }
 
 func (b *CarBuilder) TopSpeed() VehicleBuilder {
-	b.v.TopSpeed = 160
+	b.vehicle.TopSpeed = 160
 	return b
 }
 
 func (c *CarBuilder) SetStructure() VehicleBuilder {
-	c.v.Structure = "Car"
+	c.vehicle.Structure = "Car"
 	return c
 }
 
 func (c *CarBuilder) Build() Vehicle {
-	return c.v
+	return c.vehicle
 }
 
 
