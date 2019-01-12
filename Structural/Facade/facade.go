@@ -52,11 +52,23 @@ func NewComputer() *Computer {
 
 }
 
-func (this *Computer) Start() {
+func (this *Computer) FreezCPU() {
 	this.cpu.Freeze()
-	this.memory.Load(BOOT_ADDRESS, this.hardDrive.Read(BOOT_SECTOR, SECTOR_SIZE))
+}
+func (this *Computer) JumpCPU() {
 	this.cpu.Jump(BOOT_ADDRESS)
+}
+func (this *Computer) ExecuteCPU() {
 	this.cpu.Execute()
+}
+func (this *Computer) LoadMemory() {
+	this.memory.Load(BOOT_ADDRESS, this.hardDrive.Read(BOOT_SECTOR, SECTOR_SIZE))
+}
+func (this *Computer) Start() {
+	this.FreezCPU()
+	this.LoadMemory()
+	this.JumpCPU()
+	this.ExecuteCPU()
 }
 
 func main() {
