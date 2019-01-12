@@ -4,9 +4,7 @@ Adapts a given class/object to a new interface. The problem we are solving here 
 
 Facade
 -------
-Is more like a simple gateway to a complicated set of functionality. You make a black-box for your clients to worry less i.e. make interfaces simpler. 
-(make library)
--------
+Is more like a simple gateway to a complicated set of functionality. You make a black-box for your clients to worry less i.e. make interfaces simpler. (make library)
 
 Proxy
 -------
